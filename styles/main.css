@@ -507,6 +507,9 @@ portfolio
                     .about-me .text>div {
                         padding: 20px;
                     }
+                    .about-me .text>div p{
+                        text-align: center;
+                    }
                     .about-me .text>div ul {
                         /*background: #42704e;*/
                         justify-content: center;
@@ -522,7 +525,7 @@ portfolio
                     }
                 }
                 /*portafolio*/
-                @media(max-width: 930px) {
+                @media(max-width: 969px) {
                     .portfolio .articles {
                        /* background: #1EA1F2;*/
                         justify-content: space-around;;
