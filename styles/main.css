@@ -54,9 +54,8 @@ Header
                     padding: 0 20px;
                     position: fixed;
                     top: 0;
-                    z-index:1;
+                    z-index: 1;
                     height: 80px;
-                    
                 }
                 
                 header .container {
@@ -89,7 +88,7 @@ Header
                 
                 header li {
                     margin-left: 15px;
-                    transition: border-bottom,padding-bottom 0.3s ease;
+                    transition: border-bottom, padding-bottom 0.3s ease;
                 }
                 /*header li {
     padding-bottom: 9px;
@@ -101,6 +100,7 @@ Header
                     padding-bottom: 9px;
                     border-bottom: 4px solid #42704e;
                 }
+                
                 header .menu {
                     color: white;
                     position: absolute;
@@ -109,6 +109,7 @@ Header
                     cursor: pointer;
                     display: none;
                 }
+                
                 .show-menu header nav {
                     transform: translateX(0%);
                 }
@@ -145,6 +146,7 @@ Sobre mi
                 
                 .about-me ul {
                     display: flex;
+                    margin-bottom: 10px;
                 }
                 
                 .about-me li {
@@ -176,6 +178,10 @@ Sobre mi
                 
                 .about-me .skype {
                     background-color: #0495E2;
+                }
+                
+                .about-me .face {
+                    background-color: blue;
                 }
                 
                 .about-me figure {
@@ -314,7 +320,8 @@ portfolio
                 }
                 
                 .contact .contact-1 {
-                    width:80%;/*652*/
+                    width: 80%;
+                    /*652*/
                     border-right: 1px solid #d5d5d5;
                 }
                 
@@ -436,49 +443,41 @@ portfolio
                     color: white;
                 }
                 /*responsive*/
-                @media(max-width:970px){
-                    .container{
+                
+                @media(max-width:970px) {
+                    .container {
                         padding: 0px 20px
                     }
-
                 }
                 /*header*/
-                @media(max-width:700px){
-                    header nav{
+                
+                @media(max-width:700px) {
+                    header nav {
                         width: 80%;
                         position: fixed;
                         top: 0;
                         left: 0;
-                       bottom: 0;
-                    /* right: 67px;*/
-                       background: rgba(0,0,0,.8);
-                       transition: all .5s ease;
-                       transform: translateX(-100%);
+                        bottom: 0;
+                        /* right: 67px;*/
+                        background: rgba(0, 0, 0, .8);
+                        transition: all .5s ease;
+                        transform: translateX(-100%);
                     }
-
                     header ul {
                         /*background: red;*/
                         display: block;
                     }
-                
                     header ul li {
                         /*background:yellowgreen;*/
                         margin: 0;
-                        
-                           
-                            
-                    
                     }
-                     
-                header ul li:hover {
-                    padding-bottom: 0px;
-                    border-bottom: 0px solid #42704e;
-                }
-                    header ul li:hover a{
-                      font-size: 20px;
+                    header ul li:hover {
+                        padding-bottom: 0px;
+                        border-bottom: 0px solid #42704e;
                     }
-
-                
+                    header ul li:hover a {
+                        font-size: 20px;
+                    }
                     header ul a {
                         display: block;
                         padding: 20px;
@@ -486,11 +485,9 @@ portfolio
                         font-size: 16px;
                         transition: font-size 0.3s ease;
                     }
-                
                     header .menu {
                         display: block;
                     }
-
                 }
                 /*about-me*/
                 
@@ -507,7 +504,7 @@ portfolio
                     .about-me .text>div {
                         padding: 20px;
                     }
-                    .about-me .text>div p{
+                    .about-me .text>div p {
                         text-align: center;
                     }
                     .about-me .text>div ul {
@@ -525,15 +522,18 @@ portfolio
                     }
                 }
                 /*portafolio*/
+                
                 @media(max-width: 969px) {
                     .portfolio .articles {
-                       /* background: #1EA1F2;*/
-                        justify-content: space-around;;
+                        /* background: #1EA1F2;*/
+                        justify-content: space-around;
+                        ;
                     }
                     .portfolio .articles article {
                         align-self: center;
                     }
                 }
+                
                 @media(max-width: 630px) {
                     .portfolio .articles {
                         /*background: red;*/
@@ -556,17 +556,16 @@ portfolio
                     }
                 }
                 /*skills*/
-                
-               /* @media(max-width:1000px) {
+                /* @media(max-width:1000px) {
                     .havilidades {
                         justify-content: center;
                         flex-direction: column;
                         /*background: yellow;*/
-                  /*  }
+                /*  }
                     .havilidades .skill {
                         width: 60%;
                         /*background: blue;*/
-                      /*  align-self: center;
+                /*  align-self: center;
                     }
                 }*/
                 
@@ -582,46 +581,38 @@ portfolio
                     }
                 }
                 /*contact*/
-                @media(max-width:1000px){
+                
+                @media(max-width:1000px) {
                     .contact {
                         display: flex;
                         flex-direction: column;
                     }
-                    
                     .contact .contact-1 {
                         /*background: #4c2358;*/
                         align-self: center;
-                        width:100%;/*652*/
+                        width: 100%;
+                        /*652*/
                         border-right: 0px solid #d5d5d5;
                     }
-                    .contact .contact-2{
+                    .contact .contact-2 {
                         align-self: center;
                     }
-                    .contact-1 .formulario{
-                        margin:  auto;
+                    .contact-1 .formulario {
+                        margin: auto;
                         /*background: blue;*/
                         width: 90%;
                     }
-
-                    
-
-                }
-                @media(max-width:719px){
-                    .contact-1 .formulario>div {
-                        width: 100%;
-                       /* background: red;*/
-                    }
                 }
                 
- 
-
-
-
-
+                @media(max-width:719px) {
+                    .contact-1 .formulario>div {
+                        width: 100%;
+                        /* background: red;*/
+                    }
+                }
                 /*footer*/
                 
                 @media(max-width:800px) {
-                    
                     footer .container {
                         display: flex;
                         /*background: #4c2358;*/
