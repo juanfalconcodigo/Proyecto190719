@@ -88,7 +88,8 @@ Header
                 
                 header li {
                     margin-left: 15px;
-                    transition: border-bottom, padding-bottom 0.3s ease;
+                    transition: transform, border-bottom, padding-bottom 0.4s ease;
+                    transition-delay: 0.1s;
                 }
                 /*header li {
     padding-bottom: 9px;
@@ -96,9 +97,20 @@ Header
 }
 */
                 
-                header li:hover {
+                header li:nth-child(even):hover {
                     padding-bottom: 9px;
                     border-bottom: 4px solid #42704e;
+                    transform: rotate(20deg);
+                }
+                
+                header li:nth-child(odd):hover {
+                    padding-bottom: 9px;
+                    border-bottom: 4px solid #42704e;
+                    transform: rotate(-20deg);
+                }
+                
+                header li:hover a {
+                    color: rgb(255, 255, 0);
                 }
                 
                 header .menu {
